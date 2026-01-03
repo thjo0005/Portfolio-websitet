@@ -1,0 +1,128 @@
+/* Page scope */
+.page-about {
+  background: #f7f9fc;
+  color: #1a1a1a;
+}
+
+.page-about main {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 40px 18px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* Intro section */
+.page-about .about-section:first-of-type {
+  background: #f3f6fb;
+  padding: 48px 24px 56px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+}
+
+.page-about h1 {
+  margin: 0 0 18px;
+  font-size: 22px;
+  color: var(--navy);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+.page-about h2 {
+  margin: 0 0 18px;
+  font-size: 20px;
+  color: var(--navy);
+  font-weight: 700;
+  text-align: center;
+}
+
+.page-about h1 + h2 {
+  margin-top: 8px;
+}
+
+.page-about h2 + p {
+  margin-top: 8px;
+}
+
+.page-about p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.about-portrait {
+  display: block;
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin: 28px auto 0;
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.18);
+}
+
+/* Card sections */
+.page-about .about-section:not(:first-of-type) {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+  padding: 26px 24px 28px;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.page-about .about-section:not(:first-of-type) h2 {
+  display: block;
+  width: 100%;
+  background: #b8cee8;
+  color: var(--navy);
+  padding: 10px 0 12px;
+  border-radius: 12px;
+  font-size: 17px;
+  margin: 0 0 18px;
+}
+
+.page-about .about-section:not(:first-of-type) p {
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+/* CTA */
+.page-about .play__cta {
+  display: flex;
+  justify-content: center;
+}
+
+.page-about .btn-find {
+  display: inline-block;
+  background: var(--navy);
+  color: #fff;
+  padding: 14px 24px;
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+  text-decoration: none;
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.16);
+}
+
+@media (min-width: 768px) {
+  .page-about main {
+    padding: 48px 32px 96px;
+    gap: 68px;
+  }
+
+  .page-about .about-section:first-of-type {
+    padding: 60px 40px 68px;
+  }
+
+  .about-portrait {
+    width: 220px;
+    height: 220px;
+    margin-top: 36px;
+  }
+
+  .page-about .about-section:not(:first-of-type) {
+    padding: 30px 32px 32px;
+  }
+}
