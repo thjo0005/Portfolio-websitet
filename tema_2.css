@@ -1,0 +1,331 @@
+.navigation {
+  display: flex;
+  justify-content: center;
+  padding: 120px 24px 90px;
+  background: #fff;
+}
+
+.knap {
+  width: min(320px, 92vw);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+}
+
+.knap h1 {
+  margin: -16px 0 0;
+  color: var(--navy);
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.btn-find {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: min(220px, 82vw);
+  height: 40px;
+  border-radius: 999px;
+  background: var(--navy);
+  color: #fff;
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  box-shadow: 0 10px 18px rgba(11, 42, 97, 0.18);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-find:hover {
+  background: #5d83c2;
+  color: var(--deep-navy);
+  transform: translateY(-1px);
+  box-shadow: 0 12px 20px rgba(11, 42, 97, 0.22);
+}
+
+.btn-find.is-active {
+  background: #b7cff0;
+  color: var(--deep-navy);
+  box-shadow: 0 10px 18px rgba(11, 42, 97, 0.12);
+}
+
+@media (min-width: 700px) {
+  .navigation {
+    padding: 80px 24px 60px;
+  }
+
+  .knap h1 {
+    font-size: 32px;
+  }
+
+  .btn-find {
+    height: 60px;
+    font-size: 19px;
+  }
+}
+
+/* Tema 2 layout */
+#main-content {
+  gap: 24px;
+}
+
+.about-section {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 18px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.about-section > div:first-child {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.about-section > div:first-child h2 {
+  margin: 0;
+  background: var(--navy);
+  color: #fff;
+  padding: 6px 125px;
+  border-radius: 999px;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.about-section > div:first-child h3 {
+  margin: 0;
+  color: var(--navy);
+  font-size: 14px;
+  font-weight: 600;
+  background: #f9fafc;
+  padding: 6px 14px 7px;
+  border-radius: 12px;
+}
+
+.about-section > div:not(:first-child),
+.about-section > section {
+  background: #fff;
+  border-radius: 18px;
+  padding: 22px 20px 24px;
+  box-shadow: 0 12px 22px rgba(11, 42, 97, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.about-section > div:not(:first-child) h2,
+.about-section > section h2 {
+  margin: 0 auto;
+  padding: 10px 0;
+  border-radius: 12px;
+  background: #f9fafc;
+  color: var(--navy);
+  font-size: 18px;
+  font-weight: 700;
+  width: 240px;
+  text-align: center;
+}
+
+.about-section > section h2 {
+  background: var(--navy);
+  color: #f9fafc;
+  width: 240px;
+  padding: 3px 0;
+}
+
+.about-section p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #1e1f24;
+}
+
+.bullet-list {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #1e1f24;
+}
+
+.bullet-list li + li {
+  margin-top: 10px;
+}
+
+.portefolio_billede {
+  width: min(420px, 100%);
+  margin: 14px auto 0;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+}
+
+.about-section > section {
+  text-align: center;
+}
+
+.about-section .menu {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.about-section .nav-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 150px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #f9fafc;
+  color: var(--navy);
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  box-shadow: 0 10px 18px rgba(11, 42, 97, 0.18);
+  font-size: 14px;
+}
+
+@media (min-width: 700px) {
+  #main-content {
+    gap: 32px;
+  }
+
+  .about-section {
+    padding: 0 24px 100px;
+    gap: 32px;
+  }
+
+  .about-section > div:not(:first-child),
+  .about-section > section {
+    padding: 26px 28px 30px;
+  }
+
+  .about-section > div:first-child h2 {
+    font-size: 16px;
+  }
+
+  .about-section > div:first-child h3 {
+    font-size: 15px;
+  }
+
+  .about-section p {
+    font-size: 15px;
+  }
+
+  .portefolio_billede {
+    width: min(40px, 100%);
+  }
+}
+
+@media (min-width: 980px) {
+  .navigation {
+    padding: 70px 24px 50px;
+  }
+
+  .knap {
+    width: min(520px, 92vw);
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    grid-template-rows: auto repeat(2, auto);
+    gap: 18px 32px;
+    justify-items: center;
+  }
+
+  .knap h1 {
+    grid-column: 1 / -1;
+    margin: 0 0 8px;
+  }
+
+  .btn-find {
+    width: 100%;
+    max-width: 220px;
+  }
+
+  .knap .btn-find:nth-of-type(1) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .knap .btn-find:nth-of-type(2) {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .knap .btn-find:nth-of-type(3) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .knap .btn-find:nth-of-type(4) {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .about-section {
+    max-width: 980px;
+    gap: 36px;
+  }
+
+  .about-section > div:first-child {
+    align-items: flex-start;
+    text-align: left;
+    width: 860px;
+    margin: 0 auto;
+  }
+
+  .about-section > div:first-child h2,
+  .about-section > div:first-child h3 {
+    margin-left: 0;
+  }
+
+  .about-section > div:nth-child(2) {
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  .about-section > div:not(:first-child),
+  .about-section > section {
+    width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-section > div:nth-child(n + 3) {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 260px;
+    gap: 12px 36px;
+    align-items: start;
+  }
+
+  .about-section > div:nth-child(n + 3) h2,
+  .about-section > div:nth-child(n + 3) p,
+  .about-section > div:nth-child(n + 3) .bullet-list {
+    grid-column: 1 / 2;
+    text-align: left;
+  }
+
+  .about-section > div:nth-child(n + 3) h2 {
+    margin: 0 auto 4px;
+    text-align: center;
+  }
+
+  .about-section > div:nth-child(n + 3) > div {
+    grid-column: 2 / 3;
+    justify-self: center;
+  }
+
+  .portefolio_billede {
+    width: 340px;
+  }
+}
