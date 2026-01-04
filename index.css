@@ -1,4 +1,27 @@
 /* Hero */
+.home .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  border-bottom: none;
+  z-index: 10;
+}
+
+.home .nav-link {
+  color: #f6f7fb;
+}
+
+.home .nav-link:hover,
+.home .nav-link:focus-visible {
+  color: #ffffff;
+}
+
+.home .logo img {
+  filter: brightness(0) invert(1);
+}
+
 .hero-card {
   position: relative;
   height: clamp(432px, 66vw, 624px);
@@ -106,6 +129,14 @@
 }
 
 @media (min-width: 900px) {
+  .hero-card {
+    height: 100vh;
+  }
+
+  .hero-title {
+    font-size: clamp(40px, 4vw, 56px);
+  }
+
   .introduction {
     padding: 96px 24px 120px;
   }
