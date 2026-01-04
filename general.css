@@ -18,6 +18,48 @@ body {
   line-height: 1.5;
 }
 
+.header {
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 18px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.logo img {
+  height: 72px;
+  width: auto;
+  display: block;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: var(--navy);
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  color: var(--deep-navy);
+}
+
 main {
   display: flex;
   flex-direction: column;
