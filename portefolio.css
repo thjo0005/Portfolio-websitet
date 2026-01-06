@@ -109,7 +109,7 @@
   border-radius: 12px;
 }
 
-.about-section > div:not(:first-child),
+.about-section > div:not(:first-child):not(.about-nav),
 .about-section > section {
   background: #fff;
   border-radius: 18px;
@@ -196,6 +196,30 @@
   font-size: 14px;
 }
 
+.about-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: nowrap;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.about-section > .about-nav {
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+  border-radius: 0;
+}
+
+.about-nav .btn-find {
+  width: min(160px, 70vw);
+  height: 36px;
+  font-size: 15px;
+}
+
 @media (min-width: 700px) {
   #main-content {
     gap: 32px;
@@ -232,7 +256,7 @@
   }
 }
 
-@media (min-width: 980px) {
+@media (min-width: 900px) {
   .navigation {
     padding: 70px 24px 50px;
   }
@@ -298,35 +322,42 @@
     margin: 0 auto;
   }
 
-  .about-section > div:not(:first-child),
+  .about-section > div:not(:first-child):not(.about-nav),
   .about-section > section {
     width: 1100px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .about-section > div:nth-child(n + 3) {
+  .about-section > div:nth-child(n + 3):not(.about-nav) {
     display: grid;
     grid-template-columns: minmax(0, 1fr) 420px;
     gap: 20px 56px;
     align-items: start;
   }
 
-  .about-section > div:nth-child(n + 3) h2,
-  .about-section > div:nth-child(n + 3) p,
-  .about-section > div:nth-child(n + 3) .bullet-list {
+  .about-section > div:nth-child(n + 3):not(.about-nav) h2,
+  .about-section > div:nth-child(n + 3):not(.about-nav) p,
+  .about-section > div:nth-child(n + 3):not(.about-nav) .bullet-list {
     grid-column: 1 / 2;
     text-align: left;
   }
 
-  .about-section > div:nth-child(n + 3) h2 {
+  .about-section > div:nth-child(n + 3):not(.about-nav) h2 {
     margin: 0 auto 4px;
     text-align: center;
   }
 
-  .about-section > div:nth-child(n + 3) > div {
+  .about-section > div:nth-child(n + 3):not(.about-nav) > div {
     grid-column: 2 / 3;
     justify-self: center;
+  }
+
+  .about-section > div.about-nav {
+    display: flex;
+    grid-template-columns: none;
+    justify-content: center;
+    align-items: center;
   }
 
   .portefolio_billede {
