@@ -131,6 +131,8 @@
 .guide-icon {
   width: 95px;
   height: 95px;
+  max-width: none;
+  aspect-ratio: 1 / 1;
   display: block;
   margin: 0 auto;
   object-fit: contain;

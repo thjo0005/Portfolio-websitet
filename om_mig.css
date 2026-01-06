@@ -149,6 +149,11 @@
   max-width: 720px;
 }
 
+.page-about [popover] .article-subtitle {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
 /* CTA */
 .page-about .play__cta {
   display: flex;
