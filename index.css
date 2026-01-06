@@ -59,6 +59,16 @@
   font-size: clamp(16px, 2vw, 22px);
 }
 
+@media (max-width: 600px) {
+  .hero-title {
+    font-size: clamp(32px, 7vw, 40px);
+  }
+
+  .hero-subtitle {
+    font-size: clamp(20px, 5vw, 26px);
+  }
+}
+
 /* Introduction */
 .introduction {
   background: #f4f5f7;
