@@ -38,9 +38,11 @@
   position: absolute;
   inset: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 0 24px;
+  gap: 10px;
 }
 
 .hero-title {
@@ -51,6 +53,10 @@
   text-shadow: 0 10px 26px rgba(0, 0, 0, 0.45);
   font-family: "DM Serif Text", serif;
   font-weight: 400;
+}
+
+.hero-subtitle {
+  font-size: clamp(16px, 2vw, 22px);
 }
 
 /* Introduction */
